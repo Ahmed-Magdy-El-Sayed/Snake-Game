@@ -55,11 +55,15 @@ h4{
     top: calc(50% - 22px);
     left: calc(50% - 1vw);
 }
-.snake div:last-child{
-    border-radius: 0 0 10px 10px;
-    /* border-right: 5px solid transparent;
-    border-left: 5px solid transparent;
-    border-top: 50px solid firebrick; */
+.snake div:last-child::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: firebrick;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    border-radius: 50%;
 }
 @keyframes show {
     0%{
